@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title></title>
+  <title>First-Mobile</title>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -14,15 +14,149 @@
 
   <main class="main">
 
-    <section class="content">
-      <div class="container">
-        <div class="content__wrapper">
+    <section class="head">
 
+      <div class="top-slider">
+        <div class="top-slider__item">
+          <h3 class="top-slider__title">
+            Мысли глобально
+          </h3>
+          <div class="top-slider__box">
+            <p class="top-slider__text">
+              Di Gі - это диджитал агентство полного цикла, направленное на самый лучший результат наших клиентов в
+              маркетинге, продажах и управлении
+            </p>
+            <button class="top-slider__btn">Подробнее</button>
+          </div>
+        </div>
+
+        <div class="top-slider__item">
+          <h3 class="top-slider__title">
+            Мысли глобально
+          </h3>
+          <div class="top-slider__box">
+            <p class="top-slider__text">
+              Di Gі - это диджитал агентство полного цикла, направленное на самый лучший результат наших клиентов в
+              маркетинге, продажах и управлении
+            </p>
+            <button class="top-slider__btn">Подробнее</button>
+          </div>
+        </div>
+
+        <div class="top-slider__item">
+          <h3 class="top-slider__title">
+            Мысли глобально
+          </h3>
+          <div class="top-slider__box">
+            <p class="top-slider__text">
+              Di Gі - это диджитал агентство полного цикла, направленное на самый лучший результат наших клиентов в
+              маркетинге, продажах и управлении
+            </p>
+            <button class="top-slider__btn">Подробнее</button>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+    <section class="call">
+      <div class="container">
+        <div class="call__inner">
+          <div class="call__box">
+            <div class="call__title">
+              Вы полюбите нас с первой встречи!
+            </div>
+            <p class="call__text">
+              Мы предоставляем комплексный подход к продвижению компании,
+              продуктов и услуг в цифровой сфере.
+            </p>
+          </div>
+          <button class="call__btn">
+            ПЕРЕЗВОНИТЕ МНЕ
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="service">
+      <div class="container">
+        <div class="service__inner">
+          <div class="service__head">
+            <h4 class="service__title title">
+              Сервис
+            </h4>
+            <p class="service__desc">
+              От идеи до незабываемого и
+              измеримого результата.
+            </p>
+            <div class="service__text">
+              Интеграция безупречного производства, передовых технологий и тщательного измерения производительности
+            </div>
+          </div>
+
+          <div class="service__items">
+
+            @@include('../components/_service-card.html')
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="project">
+      <div class="container">
+        <div class="project__title title">
+          Наши Проекты
+        </div>
+
+        <div class="project__items">
+
+          @@include('../components/_project-card.html')
 
         </div>
       </div>
     </section>
 
+    <section class="team">
+      <div class="container">
+
+        <div class="team__inner">
+          <img class="team__images" src="./images/content/team.jpg" alt="images team">
+
+          <div class="team__content">
+            <div class="team__title title">Команда</div>
+
+            <div class="team__text">
+              <p>
+                Наша команда - это наша самая большая ценность.
+                Мы трудились, чтобы собрать группу экспертов,
+                чьи навыки дополняют друг друга.
+              </p>
+              <p>
+                У членов нашей команды разные истории, но мы разделяем общую
+                страсть к идеалу. Мы верим, чтобы оставаться
+                профессионалом, нужно развиваться,
+                поэтому мы постоянно ищем способы, как стать лучше
+                в том, что мы делаем.
+              </p>
+            </div>
+
+            <button class="team__btn">СМОТРЕТЬ ВИДЕО</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="news">
+      <div class="container">
+        <div class="news__title title">Последние Новости</div>
+
+        <div class="news__items">
+          @@include('../components/_news-card.html')
+        </div>
+      </div>
+    </section>
   </main>
 
   @@include('../components/_footer.html')

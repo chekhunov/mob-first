@@ -1,0 +1,13 @@
+.head {
+  min-height: 193px;
+  background-image: url('../images/content/bg-slider.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+@media (min-width: 640px) {
+  .head {
+    min-height: 386px;
+    background-position: center center;
+  }
+}

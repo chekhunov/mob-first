@@ -1,0 +1,134 @@
+.project {
+  padding: 20px 0 20px;
+  text-align: center;
+  background: linear-gradient(180deg, #2b4074 0%, rgba(43, 64, 116, 0) 100%);
+
+  &__title {
+    margin-bottom: 40px;
+    color: #fff;
+    &::after {
+      background-color: #fff;
+    }
+  }
+
+  &__item-img {
+    min-height: 250px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    padding: 12px 14px;
+    border-radius: 4px;
+
+    &:hover {
+      .project__item-inner {
+        opacity: 1;
+      }
+    }
+  }
+
+  &__item-inner {
+    min-height: 227px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    background-color: rgba($bg-color, 0.83);
+    opacity: 0;
+    transition: background-color 0.5s;
+  }
+
+  &__item-svg {
+    width: 28px;
+    height: 28px;
+  }
+
+  &__item-link {
+    display: block;
+    padding: 20px 0;
+    letter-spacing: 2px;
+    color: $accent;
+    @extend %robotoCondensed-700;
+  }
+
+  &__item-info,
+  &__item-search {
+    margin: 0 7px;
+  }
+}
+
+@media (min-width: 640px) {
+  .project {
+    padding: 40px 0 20px;
+
+    &__item-img {
+      min-height: 460px;
+      padding: 21px 24px;
+    }
+
+    &__item-inner {
+      min-height: 417px;
+    }
+
+    &__item-link {
+      font-size: 20px;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .project {
+    padding: 80px 0 60px;
+
+    &__items {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    &__item-img {
+      min-height: 282px;
+      width: 317px;
+      padding: 12px 14px;
+    }
+
+    &__item-inner {
+      min-height: 256px;
+    }
+
+    &__item-link {
+      padding: 30px 0;
+      font-size: 20px;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .project {
+    &__items {
+      justify-content: center;
+    }
+    &__item-img {
+      margin: 0 12px;
+    }
+
+    &__item-inner {
+      min-height: 256px;
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  .project {
+    &__items {
+      flex-wrap: nowrap;
+      justify-content: space-between;
+    }
+    &__item-img {
+      width: 300px;
+    }
+
+    &__item-inner {
+      min-height: 256px;
+    }
+  }
+}

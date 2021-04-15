@@ -1,0 +1,144 @@
+.service {
+  &__item {
+    min-height: 310px;
+    padding: 0 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid $bg-color;
+    border-bottom: none;
+    &:last-child {
+      border-bottom: 1px solid $bg-color;
+    }
+    &:hover {
+      .service__item-text,
+      .service__item-link {
+        opacity: 1;
+        height: auto;
+        overflow: visible;
+      }
+      .service__item-title {
+        margin-bottom: 30px;
+      }
+      .service__item-inner {
+        min-height: 277px;
+        margin: 18px 0;
+        padding: 25px 20px 5px;
+        border: 4px solid $accent;
+      }
+    }
+  }
+
+  &__item-inner {
+    transition: all 0.5s;
+  }
+
+  &__item-img {
+    margin: 0 auto 30px;
+  }
+
+  &__item-title {
+    font-size: 16px;
+    letter-spacing: 2px;
+    color: $text-color;
+    text-transform: uppercase;
+    @extend %robotoCondensed-700;
+  }
+
+  &__item-text,
+  &__item-link {
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+    transition: opacity 0.5s, height 0.5s, overflow 0.5s;
+  }
+
+  &__item-text {
+    margin-bottom: 17px;
+    font-size: 16px;
+    @extend %dosis-500;
+  }
+
+  &__item-link {
+    font-size: 16px;
+    letter-spacing: 2px;
+    color: $accent;
+    text-transform: uppercase;
+    @extend %robotoCondensed-700;
+  }
+}
+
+@media (min-width: 640px) {
+  .service {
+    &__item {
+      width: 50%;
+      &:nth-child(even) {
+        border-left: none;
+      }
+      &:last-child {
+        border-bottom: none;
+      }
+    }
+  }
+}
+
+@media (min-width: 640px) {
+  .service {
+    &__item {
+      min-height: 334px;
+      padding: 0 65px;
+      &:hover {
+        padding: 0 18px;
+        .service__item-inner {
+          min-height: 288px;
+          margin: 18px 0;
+          padding: 35px 60px 5px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .service {
+    &__item {
+      width: 25%;
+      min-height: 280px;
+      padding: 0 17px;
+      &:nth-child(2),
+      &:nth-child(6) {
+        border-right: none;
+      }
+      &:hover {
+        padding: 0 17px;
+        .service__item-inner {
+          min-height: 270px;
+          margin: 10px 0;
+          padding: 21px 9px 5px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  .service {
+    &__item {
+      width: 230px;
+      height: 273px;
+      padding: 0 5px;
+      &:nth-child(2),
+      &:nth-child(6) {
+        border-right: none;
+      }
+      &:hover {
+        padding: 0 5px;
+        .service__item-inner {
+          min-height: 255px;
+          margin: 5px 0;
+          padding: 10px 3px 5px;
+        }
+      }
+    }
+  }
+}

@@ -13,7 +13,9 @@ html {
 
 // только у них будет padding 0 если класса у них нет тогда padding будет не 0
 ul,
-ol {
+ol,
+button,
+p {
   padding: 0;
 }
 
