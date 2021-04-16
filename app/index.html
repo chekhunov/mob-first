@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
-<body>
+<body id="body">
 
   <header id="header-section" class="header">
 
@@ -514,25 +514,97 @@
   </main>
 
   <footer class="footer">
+  <div class="container">
+    <a class="footer__logo">
+      <img class="footer__logo-img" src="./images/logo.png" alt="logo images">
+    </a>
+    <div class="footer__wrapper">
+      <div class="footer__top">
+        <p class="footer__text">Мы хотели бы услышать все о вашем проекте.
+          Свяжись с нами.</p>
+        <ul class="footer__social">
+          <li class="footer__social-link">
+            <a class="footer__lnk" href="#">
+              <svg class="footer__link-svg">
+                <use xlink:href="images/sprite.svg#facebook"></use>
+              </svg>
+            </a>
+          </li>
 
-  <div class="footer__top">
-    <div class="container">
-      <div class="footer__inner">
+          <li class="footer__social-link">
+            <a class="footer__lnk" href="#">
+              <svg class="footer__link-svg">
+                <use xlink:href="images/sprite.svg#google"></use>
+              </svg>
+            </a>
+          </li>
 
+          <li class="footer__social-link">
+            <a class="footer__lnk" href="#">
+              <svg class="footer__link-svg">
+                <use xlink:href="images/sprite.svg#twitter"></use>
+              </svg>
+            </a>
+          </li>
+
+          <li class="footer__social-link">
+            <a class="footer__lnk" href="#">
+              <svg class="footer__link-svg footer__link-svg--pinterest">
+                <use xlink:href="images/sprite.svg#pinterest"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+
+      </div>
+
+      <div class="footer__bottom">
+        <ul class="footer__bottom-list">
+          <li class="footer__bottom-item">
+            <span class="footer__bottom-title">
+              КОНТАКТЫ
+            </span>
+            <a class="footer__bottom-link" href="tel:+805555566">+80 555 55 66</a>
+            <a class="footer__bottom-link" href="mailto:digi@gmail.com">digi@gmail.com</a>
+          </li>
+
+          <li class="footer__bottom-item">
+            <span class="footer__bottom-title">
+              АДРЕС
+            </span>
+            <a class="footer__bottom-link footer__bottom-link--width" href="#">
+              <p>Пр. Науки 107</p>
+              <p>Kиев /
+                Украина</p>
+            </a>
+          </li>
+
+          <li class="footer__bottom-item">
+            <span class="footer__bottom-title">
+              ПОМОЩЬ
+            </span>
+            <a class="footer__bottom-link" href="#">Как с нами связаться?</a>
+            <a class="footer__bottom-link" href="#">Что такое диджитал?</a>
+            <a class="footer__bottom-link" href="#">Стоимость услуг</a>
+          </li>
+
+          <li class="footer__bottom-item">
+            <span class="footer__bottom-title">
+              Меню
+            </span>
+            <a class="footer__bottom-link" href="#">Наши проекты</a>
+            <a class="footer__bottom-link" href="#">Команда</a>
+            <a class="footer__bottom-link" href="#">Блог</a>
+          </li>
+        </ul>
       </div>
     </div>
   </div>
-
-  <div class="footer__bottom">
-    <div class="container">
-      <div class="footer__wrapper">
-        <p class="footer__copy">
-          Copyright © 2015 <span>codeitStore</span> All Rights Reserved.
-        </p>
-      </div>
-    </div>
-  </div>
-
+  <a class="footer__link" href="#body">вверх
+    <svg class="footer__svg">
+      <use xlink:href="images/sprite.svg#up"></use>
+    </svg>
+  </a>
 </footer>
 
   <script src="js/main.min.js"></script>

@@ -1,1 +1,229 @@
+.footer {
+  background-color: $accent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
+  &__top {
+    text-align: center;
+  }
+
+  &__logo-img {
+    height: 60px;
+    margin: -35px auto 0;
+    padding: 0 74px;
+    background-color: $accent;
+    border-radius: 3px;
+  }
+  &__text {
+    max-width: 275px;
+    padding-top: 100px;
+    font-size: 20px;
+    color: #fff;
+    letter-spacing: 2px;
+  }
+
+  &__social {
+    padding: 43px 0 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__social-link {
+    &:not(:last-child) {
+      margin-bottom: 16px;
+    }
+  }
+
+  &__link-svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  &__bottom {
+    padding-bottom: 63px;
+  }
+
+  &__bottom-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__bottom-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &:not(:last-child) {
+      margin-bottom: 41px;
+    }
+  }
+
+  &__bottom-title {
+    margin-bottom: 15px;
+    font-size: 18px;
+    letter-spacing: 2px;
+    color: $bg-color;
+    text-transform: uppercase;
+    @extend %robotoCondensed-700;
+  }
+
+  &__bottom-link {
+    color: #fff;
+
+    &--width {
+      max-width: 125px;
+      text-align: center;
+    }
+  }
+
+  &__link {
+    padding: 60px 0 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    color: $text-color;
+    letter-spacing: 2px;
+    background-color: $bg-color;
+  }
+  &__svg {
+    margin-top: 20px;
+    width: 15px;
+    height: 15px;
+  }
+}
+
+@media (min-width: 640px) {
+  .footer {
+    &__top {
+      width: 100%;
+      text-align: left;
+    }
+
+    &__text {
+      max-width: 100%;
+      margin-left: 18px;
+      margin-bottom: 40px;
+      padding-top: 95px;
+      font-size: 24px;
+    }
+
+    &__social {
+      padding: 0 0 0;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: baseline;
+      border-top: 1px solid #7ebf84;
+      border-bottom: 1px solid #7ebf84;
+    }
+
+    &__social-link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      &::after {
+        display: block;
+        content: '';
+        width: 1px;
+        height: 55px;
+        margin-right: -60px;
+        margin-left: 60px;
+        background-color: #7ebf84;
+      }
+      &:last-child {
+        &::after {
+          display: none;
+        }
+      }
+      &:not(:last-child) {
+        margin-bottom: 0;
+      }
+    }
+
+    &__link-svg {
+      width: 24px;
+      height: 24px;
+      &--pinterest {
+        height: 29px;
+        margin-top: -5px;
+      }
+    }
+
+    &__bottom {
+      padding-top: 40px;
+      padding-bottom: 63px;
+    }
+
+    &__bottom-list {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+
+    &__bottom-item {
+      width: 39%;
+      align-items: flex-start;
+    }
+
+    &__bottom-link {
+      color: #fff;
+
+      &--width {
+        max-width: 125px;
+        text-align: center;
+      }
+    }
+
+    &__link {
+      height: 42px;
+      padding: 0 0 10px;
+      flex-direction: unset;
+      justify-content: flex-end;
+      align-items: flex-end;
+      width: 100%;
+      background-color: $bg-color;
+      text-transform: uppercase;
+    }
+    &__svg {
+      margin-top: 20px;
+      margin-left: 25px;
+      margin-right: 5px;
+      width: 15px;
+      height: 15px;
+    }
+  }
+}
+
+@media (min-width: 640px) {
+  .footer {
+    &__text {
+      max-width: 80%;
+      margin-left: 0;
+      margin-bottom: 80px;
+      padding-top: 168px;
+      font-size: 36px;
+    }
+
+    &__social-link {
+      &::after {
+        margin-right: -100px;
+        margin-left: 100px;
+      }
+    }
+
+    &__bottom {
+      padding-top: 59px;
+      padding-bottom: 95px;
+    }
+
+    &__bottom-item {
+      width: 25%;
+    }
+  }
+}
