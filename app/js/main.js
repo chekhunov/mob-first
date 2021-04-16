@@ -22,6 +22,20 @@ $(function () {
       },
     ],
   });
+
+  $('.slider-bottom__items').slick({
+    // normal options...
+    dots: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {},
+      },
+    ],
+  });
   // $('.menu-nav__popup').on('click', function (e) {
   //   e.preventDefault();
   //   $('.menu').toggleClass('menu--active');
